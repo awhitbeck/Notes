@@ -420,4 +420,16 @@ vector<reco::VertexCompositeCandidate>    "generalV0Candidates"       "Kshort"  
 vector<reco::VertexCompositeCandidate>    "generalV0Candidates"       "Lambda"          "RECO"    
 vector<reco::VertexCompositePtrCandidate>    "inclusiveCandidateSecondaryVertices"   ""                "RECO"
 </pre>
+
+probably its not worth messing around with the TreeMaker code to try and get it to run on other data tiers...
+
+### Integration tests for DY and γ estimations
+
+- nhan has a working version for estimating Zνν from DY and from γ events
+ - currently he has method 1, 2, and maybe 3a implemented.  
+ - hopefully sometime this weekend we'll have the first results from this study
+
+- in putting together the $R_Z/\gamma$ stuff, we realized that bibhu's table had different binning definition for different columns.  
+ - it seems that this was also effecting the closure plots, bibhu has now remade these plots:
+ 
 > Written with [StackEdit](https://stackedit.io/).
