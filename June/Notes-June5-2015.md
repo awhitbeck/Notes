@@ -431,5 +431,19 @@ probably its not worth messing around with the TreeMaker code to try and get it 
 
 - in putting together the $R_Z/\gamma$ stuff, we realized that bibhu's table had different binning definition for different columns.  
  - it seems that this was also effecting the closure plots, bibhu has now remade these plots:
- 
+
+![closure test with 18 bin (integrated over btags) parameterization of efficiencies and $R_Z/\gamma$](http://whitbeck.web.cern.ch/whitbeck/RA2b/Zinv_photons/June5_2015/Tenfb_inversePlots/closureTest18bin.png)
+
+![closure test with 24 bin (integrated over njets) parameterization of efficiencies and $R_Z/\gamma$](http://whitbeck.web.cern.ch/whitbeck/RA2b/Zinv_photons/June5_2015/Tenfb_inversePlots/closureTest24bin.png)
+
+The full list of results from Bibhu can be found [here](http://whitbeck.web.cern.ch/whitbeck/RA2b/Zinv_photons/June5_2015/Tenfb_inversePlots/)
+
+### Tree synchronization
+
+ - we still don't agree with Jack's numbers even if we move the event cleaning to be the first cut in the cut flow
+ - testing idea from Kevin where we just remove the part in which leptons and photon are -- jobs will show up here:
+ <pre>
+ /eos/uscms/store/user/awhitbe1/RA2synch_June5_2015/
+</pre>
+
 > Written with [StackEdit](https://stackedit.io/).
