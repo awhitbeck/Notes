@@ -19,7 +19,7 @@ Research Notes - June 5, 2015
   - other dataset of interest (?) HTMHT: [here](https://cmsweb.cern.ch/das/request?view=list&limit=50&instance=prod%2Fglobal&input=dataset%3D%2FHTMHT%2FRun2015*PromptReco*%2F*)
 
 the single muon dataset files are at FNAL already...
-<pre>
+<code>
 edmDumpEventContent root://cmsxrootd.fnal.gov//store/data/Run2015A/SingleMu/AOD/PromptReco-v1/000/246/865/00000/F042A080-140B-E511-8B1C-02163E0134B0.root
 
 Type                                  Module                      Label             Process   
@@ -419,5 +419,5 @@ vector<reco::Vertex>                  "offlinePrimaryVerticesWithBS"   ""       
 vector<reco::VertexCompositeCandidate>    "generalV0Candidates"       "Kshort"          "RECO"    
 vector<reco::VertexCompositeCandidate>    "generalV0Candidates"       "Lambda"          "RECO"    
 vector<reco::VertexCompositePtrCandidate>    "inclusiveCandidateSecondaryVertices"   ""                "RECO"
-</pre>
+</code>
 > Written with [StackEdit](https://stackedit.io/).
