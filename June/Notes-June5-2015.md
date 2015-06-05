@@ -8,6 +8,8 @@ Research Notes - June 5, 2015
  - get coffee and cookies scheduled for HATS next week
  - get rental car reserved for trip to CERN
  - Talk to Frank about gen-level closure tests
+ - get alternative workflow for Zinv estimations working
+ - try to see if there is an easy way to get TreeMaker code to run on AOD or RECO data (in lieu of having prompt reco MINIAOD files)
  
  ### Data discovery
 
