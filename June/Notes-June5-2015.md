@@ -441,9 +441,21 @@ The full list of results from Bibhu can be found [here](http://whitbeck.web.cern
 ### Tree synchronization
 
  - we still don't agree with Jack's numbers even if we move the event cleaning to be the first cut in the cut flow
- - testing idea from Kevin where we just remove the part in which leptons and photon are -- jobs will show up here:
+ - testing idea from Kevin where we just remove the part in which leptons and photon are:
+<pre>
+process.GoodJets.ExcludeLepIsoTrackPhotons = False
+</pre>
+submit jobs with:
+<pre>
+python generateSubmission.py -n 1 -s -f PHYS14.SMS-T1tttt_2J_mGl-1500_mLSP-100_Tune4C_13TeV-madgraph-tauola -o /eos/uscms/store/user/awhitbe1/RA2synch_June5_2015/
+</pre>
+jobs will show up here:
  <pre>
  /eos/uscms/store/user/awhitbe1/RA2synch_June5_2015/
 </pre>
+
+according to Kevin, the synch yields were exactly the same! ugh... I guess that I didn't set the parameters correctly... I need to check on this. 
+
+oops, I edited the file in the local directory, but submitted the file in the test directory. 
 
 > Written with [StackEdit](https://stackedit.io/).
