@@ -19,9 +19,10 @@ To do list :
 2. ~~track new .db file if the residual corrections become available in both repositories~~ [notes](#RA2b-item2)
 3. ~~Submit jobs to condor~~ [notes](#RA2b-item3)
 	+ ~~need to make sure that both prompt and reprocessed datasets are in looper with the right scenario~~
-4. Announce the files once they are done
-5. Make new plots for the DPS -- update plots by Monday morning for the DPS
-6. Edit RA2/b section of the DPS note... I think its in rough shape
+4. Make patch for whatever went wrong with the L2L3 residuals
+5. Announce the files once they are done
+6. Make new plots for the DPS -- update plots by Monday morning for the DPS
+7. Edit RA2/b section of the DPS note... I think its in rough shape
 
 ### NOTES:
 
@@ -170,7 +171,23 @@ I then tested the PHYS14production.py config file on MC, which uncovered a probl
 
 commit is [here](https://github.com/awhitbeck/SuSySubstructure/commit/42bbf9ed2e44d0a34e3e2fb460613ff00d028342)
 
-I also tested the configuration file locally on data, 
+I also tested the configuration file locally on data, this revealed a problem with the L2L3 residual corrections in the file that Nhan and Alexx forwarded me:
+
+<pre>----- Begin Fatal Exception 08-Aug-2015 07:48:29 CDT-----------------------
+An exception of category 'InvalidRequest' occurred while
+   [0] Processing run: 251252 lumi: 67 event: 40810229
+   [1] Running path 'WriteTree'
+   [2] Calling event method for module LeptonProducer/'LeptonsNew'
+   [3] Calling produce method for unscheduled module PATMETSlimmer/'slimmedMETsNoHF'
+   [4] Calling produce method for unscheduled module CorrectedPATMETProducer/'patPFMetT1NoHF'
+   [5] Calling produce method for unscheduled module PATPFJetMETcorrInputProducer/'patPFMetT1T2CorrNoHF'
+Exception Message:
+The JEC level L2L3Residual does not exist !!
+Available levels = { Uncorrected, L1FastJet, L2Relative, L3Absolute }.
+----- End Fatal Exception -------------------------------------------------</pre>
+
+I have already email Nhan and Alexx about this.  For now I am submitting jobs with no residual corrections.
+
 <a name="DissectingJetsMET">
 ## *Dissecting jets+MET* 
 
