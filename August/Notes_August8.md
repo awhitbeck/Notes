@@ -1,12 +1,13 @@
 Research Notes - August 8, 2015
 ------------------------------------
-# ***Summary***
+## *Summary*
+
 Working on 3 main projects today:
 
 - [RA2/b](#RA2b)
 - [pheno paper](#DissectingJetsMET) 
 - [HF commissioning work](#HFcommissioning)
-<hr>
+
 ## *RA2/b* <a name="RA2b">
 
 To do list :
