@@ -71,16 +71,12 @@ I move Kevin's script into the SuSySubstructure repo.  There are now several cop
 Overlapping runs should now be cleaned up -- I need a way of double checking this, though. 
 [commit](https://github.com/awhitbeck/SuSySubstructure/commit/02732d471ff4eba52c876f956695a207c200f2d5)
 
-<a name="RA2b-item2">
-
-#### item 2 
+#### item 2 <a name="RA2b-item2">
 
 Grabbed .db that Nhan forwarded from Alexx Perloff.  This is now committed to the repo:
 [commit](https://github.com/awhitbeck/SuSySubstructure/commit/fa4b01fe599648830c8a1791f425a439bd8b7588)
 
-<a name="RA2b-item3">
-
-#### item 3 
+#### item 3 <a name="RA2b-item3">
 
 Adding all scenarios to the help field of the scenario option in condorSub/generateSubmission.py.  The full list should be:
 
