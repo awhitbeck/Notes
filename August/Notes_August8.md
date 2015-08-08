@@ -72,11 +72,16 @@ Overlapping runs should now be cleaned up; I need a way of double checking this,
 
 
 <a name="RA2b-item2"> 
+
+
 #### item 2 
 
 Grabbed .db that Nhan forwarded from Alexx Perloff.  This is now committed to the repo.
 
+
 <a name="RA2b-item3"> 
+
+
 #### item 3 
 
 Adding all scenarios to the help field of the scenario option in condorSub/generateSubmission.py.  The full list should be:
