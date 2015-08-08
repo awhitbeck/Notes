@@ -8,7 +8,8 @@ Working on 3 main projects today:
 - [pheno paper](#DissectingJetsMET) 
 - [HF commissioning work](#HFcommissioning)
 
-## *RA2/b* <a name="RA2b">
+<a name="RA2b">
+## *RA2/b* 
 
 To do list :
 
@@ -142,7 +143,8 @@ scram b -j8</pre>
 
 Now submitting...
 
-## *Dissecting jets+MET* <a name="DissectingJetsMET">
+<a name="DissectingJetsMET">
+## *Dissecting jets+MET* 
 
 To do list :
 
@@ -150,7 +152,8 @@ To do list :
 
 2. Make 2D plots 
 
-## *HF frontend commissioning* <a name="HFcommissioning">
+<a name="HFcommissioning">
+## *HF frontend commissioning* 
 
 To do list:
 
