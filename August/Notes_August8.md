@@ -7,13 +7,13 @@ To do list :
 
 1. ~~make configuration files that have the rereco data and non-overlapping prompt data~~ [notes](#RA2/b-item1)
 2. ~~track new .db file if the residual corrections become available in both repositories~~ [notes](#RA2/b-item2)
-3. Submit jobs to condor [notes](#RA2/b-item3)
-	+ need to make sure that both prompt and reprocessed datasets are in looper with the right scenario
+3. ~~Submit jobs to condor~~ [notes](#RA2/b-item3)
+	+ ~~need to make sure that both prompt and reprocessed datasets are in looper with the right scenario~~
 4. Announce the files once they are done
 5. Make new plots for the DPS -- update plots by Monday morning for the DPS
 6. Edit RA2/b section of the DPS note... I think its in rough shape
 
-NOTE: 
+### NOTES: 
 #### item 1 <a name="RA2/b-item1">
 
 Working with SuSySubstructure branch 'synch_June26_2015'.  
@@ -70,6 +70,70 @@ https://github.com/awhitbeck/SuSySubstructure/commit/fa4b01fe599648830c8a1791f42
 
 #### item 3 <a name="RA2/b-item3">
 
+Adding all scenarios to the help field of the scenario option in condorSub/generateSubmission.py.  The full list should be:
+
+ - Phys14
+ - Spring15
+ - 2015B
+ - re2015B
+
+These are now configured correctly, hopefully:
+
+<pre>
+if options.scenario == "Phys14":
+    Global_Tag="PHYS14_25_V2"
+    tagname="PAT"
+    geninfo=True
+    jsonfile=""
+    jecfile=""
+    residual=False
+elif options.scenario == "Spring15":
+    Global_Tag="MCRUN2_74_V9"
+    tagname="PAT"
+    geninfo=True
+    jsonfile=""
+    jecfile="Summer15_25nsV2_MC"
+    residual=False
+elif options.scenario == "2015B":
+    Global_Tag="74X_dataRun2_Prompt_v1"
+    tagname="RECO"
+    geninfo=False
+    jsonfile="Cert_246908-251883_13TeV_PromptReco_Collisions15_JSON_v2.txt"
+    jecfile="Summer15_50nsV2_DATA"
+    residual=True
+elif options.scenario == "re2015B":
+    Global_Tag="74X_dataRun2_Prompt_v1"
+    tagname="PAT"
+    geninfo=False
+    jsonfile="Cert_246908-251883_13TeV_PromptReco_Collisions15_JSON_v2.txt"
+    jecfile="Summer15_50nsV2_DATA"
+    residual=True
+</pre>
+
+Organized the looper script a bit and added the reprocessed Run2015B datasets.  Now all committed to synch_June26_2015:
+
+https://github.com/awhitbeck/SuSySubstructure/commit/ca03329fe4e09f79b631d2ae7a621b8e5a374cc2
+
+File should show up in:
+<pre>/eos/uscms/store/user/lpcsusyhad/SusyRA2Analysis2015/FinalProductionDPS</pre>
+ 
+ jobs were submitted from:
+ <pre>/uscms_data/d2/awhitbe1/workArea/RA2studies/commission2015/CMSSW_7_4_6_patch6/src/AWhitbeck/SuSySubstructure/test/FinalProductionDPS</pre>
+
+***oops!!!!*** I forgot to update the TreeMaker package to the latest release...
+
+okay, I updated to the latest release and compared against the latest pull request into CMSSW_7_2_X to be sure.  I also cleaned up my area and recompiled:
+<pre>git pull # I don't think this did anything
+git fetch --all
+git branch
+git pull origin # this didn't do anything
+git pull origin CMSSW_7_2_X # I am not sure if this did anything
+git checkout -b b_2015B_v2.0 2015B_v2.0 
+cmsenv
+scram b clean
+scram b -j8</pre>
+
+Now submitting...
 
 ## *Dissecting jets+MET*
 
