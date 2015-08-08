@@ -5,16 +5,16 @@ Research Notes - August 8, 2015
 
 To do list :
 
-1. ~~make configuration files that have the rereco data and non-overlapping prompt data~~ [here](#### RA2/b-item1)
-2. ~~track new .db file if the residual corrections become available in both repositories~~
-3. Submit jobs to condor
+1. ~~make configuration files that have the rereco data and non-overlapping prompt data~~ [notes](#### RA2/b item 1)
+2. ~~track new .db file if the residual corrections become available in both repositories~~ [notes](#### RA2/b item 2)
+3. Submit jobs to condor [notes](#### RA2/b item 3)
 	+ need to make sure that both prompt and reprocessed datasets are in looper with the right scenario
 4. Announce the files once they are done
 5. Make new plots for the DPS -- update plots by Monday morning for the DPS
 6. Edit RA2/b section of the DPS note... I think its in rough shape
 
 NOTE: 
-#### RA2/b-item1
+#### RA2/b item 1
  
 Working with SuSySubstructure branch 'synch_June26_2015'.  
 Again I had this issue when I tried to updates from the remote, git complains:
@@ -62,13 +62,13 @@ Overlapping runs should now be cleaned up -- I need a way of double checking thi
 
 https://github.com/awhitbeck/SuSySubstructure/commit/02732d471ff4eba52c876f956695a207c200f2d5
 
-(2)
+#### RA2/b item 2
 
 Grabbed .db that Nhan forwarded from Alexx Perloff.  This is now committed to the repo:
 
 https://github.com/awhitbeck/SuSySubstructure/commit/fa4b01fe599648830c8a1791f425a439bd8b7588
 
-(3) 
+#### RA2/b item 3
 
 
 ## *Dissecting jets+MET*
