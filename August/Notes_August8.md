@@ -70,13 +70,9 @@ I move Kevin's script into the SuSySubstructure repo.  There are now several cop
 
 Overlapping runs should now be cleaned up; I need a way of double checking this, though. 
 
-[test](https://www.github.com/awhitbeck/SuSySubstructure/commit/02732d471ff4eba52c876f956695a207c200f2d5)
-
 #### item 2 <a name="RA2b-item2">
 
-Grabbed .db that Nhan forwarded from Alexx Perloff.  This is now committed to the repo:
-
-[test](https://www.github.com/awhitbeck/SuSySubstructure/commit/fa4b01fe599648830c8a1791f425a439bd8b7588)
+Grabbed .db that Nhan forwarded from Alexx Perloff.  This is now committed to the repo.
 
 #### item 3 <a name="RA2b-item3">
 
