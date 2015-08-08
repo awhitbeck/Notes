@@ -5,9 +5,9 @@ Research Notes - August 8, 2015
 
 To do list :
 
-1. ~~make configuration files that have the rereco data and non-overlapping prompt data~~ [notes](#### RA2/b item 1)
-2. ~~track new .db file if the residual corrections become available in both repositories~~ [notes](#### RA2/b item 2)
-3. Submit jobs to condor [notes](#### RA2/b item 3)
+1. ~~make configuration files that have the rereco data and non-overlapping prompt data~~ [notes](#RA2/b item 1)
+2. ~~track new .db file if the residual corrections become available in both repositories~~ [notes](#RA2/b item 2)
+3. Submit jobs to condor [notes](#RA2/b item 3)
 	+ need to make sure that both prompt and reprocessed datasets are in looper with the right scenario
 4. Announce the files once they are done
 5. Make new plots for the DPS -- update plots by Monday morning for the DPS
