@@ -21,8 +21,10 @@ To do list :
 5. Make new plots for the DPS -- update plots by Monday morning for the DPS
 6. Edit RA2/b section of the DPS note... I think its in rough shape
 
-### NOTES: 
-#### item 1 <a name="RA2/b-item1">
+### NOTES:
+
+<a name="RA2/b-item1"> 
+#### item 1 
 
 Working with SuSySubstructure branch 'synch_June26_2015'.  
 Again I had this issue when I tried to updates from the remote, git complains:
@@ -70,13 +72,15 @@ Overlapping runs should now be cleaned up -- I need a way of double checking thi
 
 https://github.com/awhitbeck/SuSySubstructure/commit/02732d471ff4eba52c876f956695a207c200f2d5
 
-#### item 2 <a name="RA2/b-item2">
+<a name="RA2/b-item2">
+#### item 2 
 
 Grabbed .db that Nhan forwarded from Alexx Perloff.  This is now committed to the repo:
 
 https://github.com/awhitbeck/SuSySubstructure/commit/fa4b01fe599648830c8a1791f425a439bd8b7588
 
-#### item 3 <a name="RA2/b-item3">
+<a name="RA2/b-item3">
+#### item 3 
 
 Adding all scenarios to the help field of the scenario option in condorSub/generateSubmission.py.  The full list should be:
 
