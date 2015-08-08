@@ -1,7 +1,13 @@
 Research Notes - August 8, 2015
 ------------------------------------
+# ***Summary***
+Working on 3 main projects today:
 
-## *RA2/b*
+- [RA2/b](#RA2b)
+- [pheno paper](#DissectingJetsMET) 
+- [HF commissioning work](#HFcommissioning)
+<hr>
+## *RA2/b* <a name="RA2b">
 
 To do list :
 
@@ -135,7 +141,7 @@ scram b -j8</pre>
 
 Now submitting...
 
-## *Dissecting jets+MET*
+## *Dissecting jets+MET* <a name="DissectingJetsMET">
 
 To do list :
 
@@ -143,7 +149,7 @@ To do list :
 
 2. Make 2D plots 
 
-### *HF frontend commissioning*
+## *HF frontend commissioning* <a name="HFcommissioning">
 
 To do list:
 
