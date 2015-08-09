@@ -37,23 +37,67 @@ Setting up inputFiles.py to load all of the spring15 MC and the latest data tree
 <td> sample </td> <td> events analyzed </td> <td> x-sec [pb] </td> <td>weight [/fb^-1]</td>
 </tr>
 <tr> 
-<td> Gjets400 </td><td>2068061</td><td>273</td><td id="Gjets400weight"></td>
+<td> Gjets400 </td><td>2068061</td><td>273</td><td>0.132</td>
 </tr>
-<td> Gjets600 </td><td>2492376</td><td>94.5</td><td id="Gjets600weight"></td>
+<td> Gjets600 </td><td>2492376</td><td>94.5</td><td>0.0379</td>
 </tr>
-
-<tr> 
-<td> </td><td> </td><td> </td><td> </td>
+<tr>
+<td> Zinv400 </td><td>935221</td><td>10.944</td><td>0.0117</td>
+</tr>
+<tr>
+<td> DY400 </td><td>908937</td><td>6.761</td><td>0.00744</td>
+</tr>
+<tr>
+<td> DY600 </td><td>3353595</td><td>471100</td><td>0.00335</td>
+</tr>
+<tr>
+<td> QCDpt80 </td><td>3325105</td><td>2762530</td><td>830.8</td>
+</tr>
+<tr>
+<td> QCDpt120 </td><td>3353595</td><td>471100</td><td>140.5</td>
+</tr>
+<tr>
+<td> QCDpt170 </td><td>3364368</td><td>117276</td><td>34.9</td>
+</tr>
+<tr>
+<td> QCDpt300 </td><td>2893108</td><td>7823</td><td>2.70</td>
+</tr>
+<tr>
+<td> QCDpt470 </td><td>1936832</td><td>648.2</td><td>0.335</td>
+</tr>
+<tr>
+<td> QCDpt600 </td><td>1865328</td><td>186.9</td><td>0.100</td>
+</tr>
+<tr>
+<td> QCDpt800 </td><td>1858448</td><td>32.293</td><td>0.0174</td>
+</tr>
+<tr>
+<td> QCDpt1000 </td><td>1482720</td><td>9.4183</td><td>0.00635</td>
+</tr>
+<tr>
+<td> QCDpt1400 </td><td>195447</td><td>0.84265</td><td>0.00431</td>
+</tr>
+<tr>
+<td> QCDpt1800 </td><td>193608</td><td>0.114943</td><td>0.000594</td>
+</tr>
+<tr>
+<td> QCDpt2400 </td><td>194456</td><td>0.00682981</td><td>3.51e-5</td>
+</tr>
+<tr>
+<td> QCDpt3200 </td><td>187184</td><td>0.000165445</td><td>8.84e-7</td>
+</tr>
+<tr>
+<td> TTJets </td><td>11023664</td><td>815.96</td><td>0.0740</td>
+</tr>
+<tr>
+<td> WJets400 </td><td>1828496</td><td>59.5</td><td>0.0325</td>
+</tr>
+<tr>
+<td> WJets600 </td><td>1025364</td><td>22.8</td><td>0.0222</td>
 </tr>
 
 </table>
 
-<script src="http://code.jquery.com/jquery-1.4.2.min.js">
-
-var Gjets400xsec=273.
-var Gjets400eventsAnalyzed=2068061.
-document.getElementById("Gjets400weight").innerHTML = 1000.*Gjets400xsec/Gjets400eventsAnalyzed
-</script>
 <a name="DissectingJetsMET">
 ## *Dissecting jets+MET* 
 
