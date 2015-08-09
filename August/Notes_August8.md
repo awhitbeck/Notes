@@ -6,10 +6,6 @@ Working on 3 main projects today:
 
 - [RA2/b](#RA2b) -- Most of this work had to do with finalizing all of the necessary updates to the analysis code so that the, hopefully, final version of the ntuples could be produced.  
 
-- [pheno paper](#DissectingJetsMET) 
-
-- [HF commissioning work](#HFcommissioning)
-
 <a name="RA2b">
 ## *RA2/b* 
 
@@ -19,10 +15,7 @@ To do list :
 2. ~~track new .db file if the residual corrections become available in both repositories~~ [notes](#RA2b-item2)
 3. ~~Submit jobs to condor~~ [notes](#RA2b-item3)
 	+ ~~need to make sure that both prompt and reprocessed datasets are in looper with the right scenario~~
-4. Make patch for whatever went wrong with the L2L3 residuals
-5. Announce the files once they are done
-6. Make new plots for the DPS -- update plots by Monday morning for the DPS
-7. Edit RA2/b section of the DPS note... I think its in rough shape
+4. ~~Announce the files once they are done~~
 
 ### NOTES:
 
@@ -188,28 +181,5 @@ Available levels = { Uncorrected, L1FastJet, L2Relative, L3Absolute }.
 
 I have already email Nhan and Alexx about this.  For now I am submitting jobs with no residual corrections.
 
-<a name="DissectingJetsMET">
-## *Dissecting jets+MET* 
-
-To do list :
-
-1. Finish writing up a section in the paper on the variables and their distributions
-
-2. Make 2D plots 
-
-<a name="HFcommissioning">
-## *HF frontend commissioning* 
-
-To do list:
-
-1. Thinks about availability of hardware for installing a crate into UXC
-2. Verify that triggered readout works with the RCMS configuration files
-	+ need to make sure that crate 50 gets added to the run configuration so that the DAQ is automatically configured
-	+ figure out how to analyze the data 
-	+ test ICI functionality
-3. Test ngRBXmanager at 904
-4. Get LV power software running at 904 for HF crates
-	+ figure out where the ngCCMs are and get UMD guys to test them (and the backplanes maybe)
-5. Figure out database issues for ePortage
 
 > Written with [StackEdit](https://stackedit.io/).
