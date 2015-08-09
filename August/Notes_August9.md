@@ -2,7 +2,7 @@ Research Notes - August 9, 2015
 ------------------------------------
 ## *Summary*
 
-Working on 1 main project today:
+Working on 3 main project today:
 
 - [RA2/b](#RA2b) 
 - [pheno paper](#DissectingJetsMET)
@@ -104,7 +104,7 @@ As a sanity check, this plot shows that the MC weights seems to be fine:
 
 <<<<  add plot >>>> 
 
-The lumi calculation showed that al of the PDs were 35/pb, but this only included the prompt files.  I edited the script to loop over both the July 17th reprocessing and the prompt files.  
+The lumi calculation showed that al of the PDs were 35/pb, but this only included the prompt files.  I edited the script to loop over both the July 17th reprocessing and the prompt files.  Now the integrated luminosities are all consistent with what the json file quotes:
 
 <table>
 <tr>
@@ -123,12 +123,15 @@ The lumi calculation showed that al of the PDs were 35/pb, but this only include
 <td>SingleElectron</td><td>40.989</td><td>40.021</td>
 </tr>
 <tr>
-<td>SingleMuon</td><td>410.999</td><td>40.003</td>
+<td>SingleMuon</td><td>40.999</td><td>40.003</td>
 </tr>
 <tr>
 <td>SinglePhoton</td><td>41.024</td><td>40.028</td>
 </tr>
 </table>
+
+
+
 <a name="DissectingJetsMET">
 ## *Dissecting jets+MET* 
 
