@@ -48,7 +48,7 @@ Setting up inputFiles.py to load all of the spring15 MC and the latest data tree
 
 </table>
 
-<script>
+<script src="http://code.jquery.com/jquery-1.4.2.min.js">
 var Gjets400xsec=273.
 var Gjets400eventsAnalyzed=2068061.
 document.getElementById("Gjets400weight").innerHTML = 1000.*Gjets400xsec/Gjets400eventsAnalyzed
