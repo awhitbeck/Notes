@@ -37,9 +37,9 @@ Setting up inputFiles.py to load all of the spring15 MC and the latest data tree
 <td> sample </td> <td> events analyzed </td> <td> x-sec [pb] </td> <td>weight [/fb^-1]</td>
 </tr>
 <tr> 
-<td> Gjets400 </td><td>2068061</td><td>273</td><td id="Gjets400weight">0.132</td>
+<td> Gjets400 </td><td>2068061</td><td>273</td><td id="Gjets400weight"></td>
 </tr>
-<td> Gjets600 </td><td>2492376</td><td>94.5</td><td id="Gjets600weight>0.0379</td>
+<td> Gjets600 </td><td>2492376</td><td>94.5</td><td id="Gjets600weight"></td>
 </tr>
 
 <tr> 
@@ -50,7 +50,7 @@ Setting up inputFiles.py to load all of the spring15 MC and the latest data tree
 
 <script>
 var Gjets400xsec=273.
-var Gjets600eventsAnalyzed=2068061.
+var Gjets400eventsAnalyzed=2068061.
 document.getElementById("Gjets400weight").innerHTML = 1000.*Gjets400xsec/Gjets400eventsAnalyzed
 </script>
 <a name="DissectingJetsMET">
