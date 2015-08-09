@@ -114,7 +114,7 @@ The lumi calculation showed that al of the PDs were 35/pb, but this only include
 <td>DoubleEG</td><td>41.024</td><td>40.028</td>
 </tr>
 <tr>
-<td>DoubleMuon</td><td>41.992</td><td>40.002</td>
+<td>DoubleMuon</td><td>40.992</td><td>40.002</td>
 </tr>
 <tr>
 <td>HTMHT</td><td>40.999</td><td>40.003</td>
