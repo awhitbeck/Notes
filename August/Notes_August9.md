@@ -30,7 +30,7 @@ To do list :
 working directory is here:
 <pre>/uscms_data/d2/awhitbe1/workArea/RA2studies/commission2015/CMSSW_7_4_6_patch1/src/AWhitbeck/SuSySubstructure/test/playingWithData</pre>
 
-Setting up inputFiles.py to load all of the spring15 MC and the latest data trees.  I am trying to test this, but for some reason I just get zero entries for everything.
+Setting up inputFiles.py to load all of the spring15 MC and the latest data trees.  I am trying to test this, but for some reason I just get zero entries for everything.  This fixed itself once I renewed my voms certificate.  Below is an attempt to calculate the weights, however, there seems to be a huge inefficiency in the job success...
 
 <table>
 <tr> 
@@ -45,10 +45,13 @@ Setting up inputFiles.py to load all of the spring15 MC and the latest data tree
 <td> Zinv400 </td><td>935221</td><td>10.944</td><td>0.0117</td>
 </tr>
 <tr>
+<td> Zinv600 </td><td>1014139</td><td>4.203</td><td>0.00414</td>
+</tr>
+<tr>
 <td> DY400 </td><td>908937</td><td>6.761</td><td>0.00744</td>
 </tr>
 <tr>
-<td> DY600 </td><td>3353595</td><td>471100</td><td>0.00335</td>
+<td> DY600 </td><td>3353595</td><td>2.718</td><td>0.000810</td>
 </tr>
 <tr>
 <td> QCDpt80 </td><td>3325105</td><td>2762530</td><td>830.8</td>
