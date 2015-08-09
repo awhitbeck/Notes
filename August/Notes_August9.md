@@ -1,4 +1,4 @@
-Research Notes - August 8, 2015
+Research Notes - August 9, 2015
 ------------------------------------
 ## *Summary*
 
@@ -19,7 +19,7 @@ To do list :
 	+ compute weights
 	+ compute lumis
 3. update plots by Monday morning for the DPS
-4. Edit RA2/b section of the DPS note... I think its in rough shape
+4. Edit RA2/b section of the DPS note
 
 ###Notes:
 <a name="ra2b-item1">
@@ -98,9 +98,37 @@ Setting up inputFiles.py to load all of the spring15 MC and the latest data tree
 <tr>
 <td> WJets600 </td><td>1025364</td><td>22.8</td><td>0.0222</td>
 </tr>
-
 </table>
 
+As a sanity check, this plot shows that the MC weights seems to be fine:
+
+<<<<  add plot >>>> 
+
+The lumi calculation showed that al of the PDs were 35/pb, but this only included the prompt files.  I edited the script to loop over both the July 17th reprocessing and the prompt files.  
+
+<table>
+<tr>
+<td>Primary dataset</td><td>Integrated luminosity delivered [/pb]</td><td>Integrated luminosity recorded [/pb]</td>
+</tr>
+<tr>
+<td>DoubleEG</td><td>41.024</td><td>40.028</td>
+</tr>
+<tr>
+<td>DoubleMuon</td><td>41.992</td><td>40.002</td>
+</tr>
+<tr>
+<td>HTMHT</td><td>40.999</td><td>40.003</td>
+</tr>
+<tr>
+<td>SingleElectron</td><td>40.989</td><td>40.021</td>
+</tr>
+<tr>
+<td>SingleMuon</td><td>410.999</td><td>40.003</td>
+</tr>
+<tr>
+<td>SinglePhoton</td><td>41.024</td><td>40.028</td>
+</tr>
+</table>
 <a name="DissectingJetsMET">
 ## *Dissecting jets+MET* 
 
