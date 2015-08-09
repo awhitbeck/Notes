@@ -146,7 +146,13 @@ https://github.com/awhitbeck/playingWithData/blob/master/submitPhotonCRjobs.py
 https://github.com/awhitbeck/playingWithData/blob/master/submitNminusOnePhotonJobs.py
 https://github.com/awhitbeck/playingWithData/blob/master/submitDrellYanCRjobs.py
 
-Trying to make plots now...
+Plots are very strange.  I am still applying the same MHT cuts and I find that the MC yield goes up, even though the integrated luminosity went down, and the data yield goes down.  Maybe there were conspiring problems that just gave good agreement :(
+
+Okay, I am trying to better understand what changed.  Fortunately, I can reproduce the MHT and HT calculation to within numerical precision:
+<pre>PreSelection->Scan("HT:Sum$(ak4Jets.Pt()*(abs(ak4Jets.Eta())<2.5)*(ak4Jets.Pt()>30.)):MHT:sqrt(Sum$(ak4Jets.Px()*(abs(ak4Jets.Eta())<3.0)*(ak4Jets.Pt()>30.))*Sum$(ak4Jets.Px()*(abs(ak4Jets.Eta())<3.0)*(ak4Jets.Pt()>30.))+Sum$(ak4Jets.Py()*(abs(ak4Jets.Eta())<3.0)*(ak4Jets.Pt()>30.))*Sum$(ak4Jets.Py()*(abs(ak4Jets.Eta())<3.0)*(ak4Jets.Pt()>30.))):ak4Jets.Pt():ak4Jets.Eta():abs(ak4Jets.Eta())")</pre>
+
+Similarly, I can directly compare MHT5.0 to MHT3.0.  The scatter plot for GJets events shows that there is very very high correlation between these two variables.  Basically, there are very few events which have pT>30. GeV jet in the HF.  But what changed . . .  
+
 
 **NOTE:** I just realized that I don't think the Drell-Yan CR plots have a trigger applied.  I am not sure what this implies.   I think for the high-pt events that I am interested in, there will be no bias from the trigger turn-on in data. 
 
