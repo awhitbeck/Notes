@@ -51,7 +51,7 @@ Setting up inputFiles.py to load all of the spring15 MC and the latest data tree
 <td> DY400 </td><td>908937</td><td>6.761</td><td>0.00744</td>
 </tr>
 <tr>
-<td> DY600 </td><td>3353595</td><td>2.718</td><td>0.000810</td>
+<td> DY600 </td><td>811006</td><td>2.718</td><td>0.00335</td>
 </tr>
 <tr>
 <td> QCDpt80 </td><td>3325105</td><td>2762530</td><td>830.8</td>
