@@ -15,11 +15,15 @@ To do list :
 
 1. Make patch for whatever went wrong with the L2L3 residuals
 2. Make new plots for the DPS ([notes](#ra2b-item2))
-	+ update inputFiles in playingWithData repo
+	+ ~~update inputFiles in playingWithData repo~~
 	+ compute weights
-	+ compute lumis
+	+ ~~compute lumis~~
 3. update plots by Monday morning for the DPS
+	+ review scripts to make sure that nothing should have changed
+	+ submit jobs for all backgrounds
 4. Edit RA2/b section of the DPS note
+	+ put new plots from commissioning [twiki](https://twiki.cern.ch/twiki/bin/view/CMS/RA2b13TeVCommissioning) into note
+
 
 ###Notes:
 <a name="ra2b-item1">
@@ -130,7 +134,21 @@ The lumi calculation showed that al of the PDs were 35/pb, but this only include
 </tr>
 </table>
 
+I submitted jobs to reproduce the DY-CR plots, γ-CR plots, and the photon N-1 plots.  the relevant code is here:
 
+https://github.com/awhitbeck/playingWithData/blob/master/plotDrellYanCRkinematics_batch.py
+https://github.com/awhitbeck/playingWithData/blob/master/plotPhotonCRkinematics_batch.py
+https://github.com/awhitbeck/playingWithData/blob/master/plotNminusOnePhoton_batch.py
+
+script to submit jobs:
+
+https://github.com/awhitbeck/playingWithData/blob/master/submitPhotonCRjobs.py
+https://github.com/awhitbeck/playingWithData/blob/master/submitNminusOnePhotonJobs.py
+https://github.com/awhitbeck/playingWithData/blob/master/submitDrellYanCRjobs.py
+
+Trying to make plots now...
+
+**NOTE:** I just realized that I don't think the Drell-Yan CR plots have a trigger applied.  I am not sure what this implies.   I think for the high-pt events that I am interested in, there will be no bias from the trigger turn-on in data. 
 
 <a name="DissectingJetsMET">
 ## *Dissecting jets+MET* 
