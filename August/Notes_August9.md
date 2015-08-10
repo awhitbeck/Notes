@@ -16,11 +16,11 @@ To do list :
 1. Make patch for whatever went wrong with the L2L3 residuals
 2. Make new plots for the DPS ([notes](#ra2b-item2))
 	+ ~~update inputFiles in playingWithData repo~~
-	+ compute weights
+	+ ~~compute weights~~
 	+ ~~compute lumis~~
-3. update plots by Monday morning for the DPS
-	+ review scripts to make sure that nothing should have changed
-	+ submit jobs for all backgrounds
+3. ~~update plots by Monday morning for the DPS~~
+	+ ~~review scripts to make sure that nothing should have changed~~
+	+ ~~submit jobs for all backgrounds~~
 4. Edit RA2/b section of the DPS note
 	+ put new plots from commissioning [twiki](https://twiki.cern.ch/twiki/bin/view/CMS/RA2b13TeVCommissioning) into note
 
