@@ -158,7 +158,9 @@ While try to run over both the prompt and reprocessed data, I ran into a very st
 Now, I was able to make decent data MC comparisons, although they still don't look nearly as good as the last version:
 
 [Drell-Yan CR](http://whitbeck.web.cern.ch/whitbeck/RA2b/Run2015B/FinalProductionDPS/?match=drellYanCR)
+
 [γ CR](http://whitbeck.web.cern.ch/whitbeck/RA2b/Run2015B/FinalProductionDPS/?match=photonCR)
+
 [R Z/γ](http://whitbeck.web.cern.ch/whitbeck/RA2b/Run2015B/FinalProductionDPS/?match=Zgamma)
 
 **NOTE:** I just realized that I don't think the Drell-Yan CR plots have a trigger applied.  I am not sure what this implies.   I think for the high-pt events that I am interested in, there will be no bias from the trigger turn-on in data. 
