@@ -151,8 +151,15 @@ Plots are very strange.  I am still applying the same MHT cuts and I find that t
 Okay, I am trying to better understand what changed.  Fortunately, I can reproduce the MHT and HT calculation to within numerical precision:
 <pre>PreSelection->Scan("HT:Sum$(ak4Jets.Pt()*(abs(ak4Jets.Eta())<2.5)*(ak4Jets.Pt()>30.)):MHT:sqrt(Sum$(ak4Jets.Px()*(abs(ak4Jets.Eta())<3.0)*(ak4Jets.Pt()>30.))*Sum$(ak4Jets.Px()*(abs(ak4Jets.Eta())<3.0)*(ak4Jets.Pt()>30.))+Sum$(ak4Jets.Py()*(abs(ak4Jets.Eta())<3.0)*(ak4Jets.Pt()>30.))*Sum$(ak4Jets.Py()*(abs(ak4Jets.Eta())<3.0)*(ak4Jets.Pt()>30.))):ak4Jets.Pt():ak4Jets.Eta():abs(ak4Jets.Eta())")</pre>
 
-Similarly, I can directly compare MHT5.0 to MHT3.0.  The scatter plot for GJets events shows that there is very very high correlation between these two variables.  Basically, there are very few events which have pT>30. GeV jet in the HF.  But what changed . . .  
+Similarly, I can directly compare MHT5.0 to MHT3.0.  The scatter plot for GJets events shows that there is very very high correlation between these two variables.  Basically, there are very few events which have pT>30. GeV jet in the HF.  Okay, now I see that there wasn't really any wrong with the tree themselves, as far as I can tell.  However, I was not analyzing all of the data due to a mistake in my submission scripts.  
 
+While try to run over both the prompt and reprocessed data, I ran into a very strange problem with my jobs.  If I added the 17Jul2015 files to inputFiles.py, **none** of my sampleInfo objects would be able to find the target files in eos!!! I have no idea why this would be.  After several hours of trying to debug this, I simply changed to way the tchains are loaded -- I now pass a .txt file to the work nodes that has all of the file names and just use that instead of ls'ing the target directory on eos.  This work around is a very poor substitute for the way things used to work!
+
+Now, I was able to make decent data MC comparisons, although they still don't look nearly as good as the last version:
+
+[Drell-Yan CR](http://whitbeck.web.cern.ch/whitbeck/RA2b/Run2015B/FinalProductionDPS/?match=drellYanCR)
+[γ CR](http://whitbeck.web.cern.ch/whitbeck/RA2b/Run2015B/FinalProductionDPS/?match=photonCR)
+[R Z/γ](http://whitbeck.web.cern.ch/whitbeck/RA2b/Run2015B/FinalProductionDPS/?match=Zgamma)
 
 **NOTE:** I just realized that I don't think the Drell-Yan CR plots have a trigger applied.  I am not sure what this implies.   I think for the high-pt events that I am interested in, there will be no bias from the trigger turn-on in data. 
 
