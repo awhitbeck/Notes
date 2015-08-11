@@ -12,9 +12,9 @@ Working on 1 main project today:
 To do list :
 
 1. Make patch for whatever went wrong with the L2L3 residuals
-2. Edit RA2/b section of the DPS note [notes](#ra2b-item2)
-	+ put new plots from commissioning [twiki](https://twiki.cern.ch/twiki/bin/view/CMS/RA2b13TeVCommissioning) into note
-	+ get the relevant people to update their plots on the twiki
+2. ~~Edit RA2/b section of the DPS note~~ [notes](#ra2b-item2)
+	+ !!put new plots from commissioning~~ [twiki](https://twiki.cern.ch/twiki/bin/view/CMS/RA2b13TeVCommissioning) into note
+	+ ~~get the relevant people to update their plots on the twiki~~
 	+ edit the DPS
 
 ### NOTES:
