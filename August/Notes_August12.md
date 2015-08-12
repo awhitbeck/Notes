@@ -28,7 +28,6 @@ To do list:
 <a name="triggeredReadout">
 #### Item 2 - triggered readout
 
-<div>
 **Starting a standalone xdaq session for HF test stand in 904**
 
 Log into hcal904daq01 (Eplr4S|1v) with, i think, port forwarding: 
@@ -43,7 +42,7 @@ The xdaq server can then be accessed by going to http://127.0.0.1:40010
 If everything works - 
 
 Click on the hcalSupervisor -> control panel -> setup -> start 
-</div>
+
 
 notes from other trials...
 -- For some reason this didn't work the although it has in the past.  I am not sure why though. Probably something in my proxy settings -- Indeed when I set the proxy port to 2013 and logged into cms904usr with -D 2013, everything worked -- Now the usual hyperdaq links are not there ... 
