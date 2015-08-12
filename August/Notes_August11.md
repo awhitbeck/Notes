@@ -2,11 +2,9 @@ Research Notes - August 11, 2015
 ------------------------------------
 ## *Summary*
 
-Working on 3 main project today:
+Working on 2 main project today:
 
 - [RA2/b](#RA2b) 
-- [pheno paper](#DissectingJetsMET)
-- [HF commissioning](#HFcommissioning)
 
 <a name="RA2b">
 ## *RA2/b* 
@@ -104,37 +102,26 @@ This means that there really is ~35+18/pb worth of data in the combined data set
 </tr>
 </table>
 
-After rerunning the prompt reco jobs, the data-MC agreement looks better.  Still the photon plots are off.  I have to check whether add QCD to this plot will fix things or not.  I also noticed that some of the datasets didn't have the 20/pb that I was expecting which is really strange because when there were overlaps, I found that the lumi was exactly what I expected for all PDs.  This needs to be investigated.  So, there still could be some data, MC disagreement in the drell-yan plots since I only saw 7-12/pb for the doubleEG and doulbe Muon datasets.
+After rerunning the prompt reco jobs, the data-MC agreement looks better.  Still the photon plots are off.  I have to check whether add QCD to this plot will fix things or not.  I also noticed that some of the datasets didn't have the 20/pb that I was expecting which is really strange because when there were overlaps, I found that the lumi was exactly what I expected for all PDs.  This needs to be investigated.  So, there still could be some data, MC disagreement in the drell-yan plots since I only saw 7-16/pb for the doubleEG and doulbe Muon datasets.
+
+json/lumiSummary_DoubleEG.json
+nLS=385 Integrated Lumi: delivered=   7.221 (/pb) recorded=   7.092 (/pb)
+json/lumiSummary_DoubleMuon.json
+nLS=783 Integrated Lumi: delivered=  17.010 (/pb) recorded=  16.479 (/pb)
+json/lumiSummary_HTMHT.json
+nLS=985 Integrated Lumi: delivered=  21.994 (/pb) recorded=  21.256 (/pb)
+json/lumiSummary_SingleElectron.json
+nLS=764 Integrated Lumi: delivered=  16.991 (/pb) recorded=  16.350 (/pb)
+json/lumiSummary_SingleMuon.json
+nLS=761 Integrated Lumi: delivered=  16.438 (/pb) recorded=  15.916 (/pb)
+json/lumiSummary_SinglePhoton.json
+nLS=986 Integrated Lumi: delivered=  22.019 (/pb) recorded=  21.281 (/pb)
 
 For the plotting scripts, I also added ttbar to the drell-yan histograms.  This dramatically improved the agreement.  
 
 [see here](http://whitbeck.web.cern.ch/whitbeck/RA2b/Run2015B/FinalProductionDPS/?match=)
 
 In general, I need to work on my scripts so that the are more maintainable and scalable.  Things are quite messy right now.  
-
-<a name="DissectingJetsMET">
-## *Dissecting jets+MET* 
-
-To do list :
-
-1. Finish writing up a section in the paper on the variables and their distributions
-
-2. Make 2D plots 
-
-<a name="HFcommissioning">
-## *HF frontend commissioning* 
-
-To do list:
-
-1. Thinks about availability of hardware for installing a crate into UXC
-2. Verify that triggered readout works with the RCMS configuration files
-	+ need to make sure that crate 50 gets added to the run configuration so that the DAQ is automatically configured
-	+ figure out how to analyze the data 
-	+ test ICI functionality
-3. Test ngRBXmanager at 904
-4. Get LV power software running at 904 for HF crates
-	+ figure out where the ngCCMs are and get UMD guys to test them (and the backplanes maybe)
-5. Figure out database issues for ePortage
 
 
 
