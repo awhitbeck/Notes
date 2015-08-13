@@ -28,6 +28,7 @@ To do list:
 <a name="triggeredReadout">
 #### Item 2 - triggered readout
 
+<hr>
 **Starting a standalone xdaq session for HF test stand in 904**
 
 Log into hcal904daq01 (Eplr4S|1v) with, i think, port forwarding: 
@@ -42,20 +43,53 @@ The xdaq server can then be accessed by going to http://127.0.0.1:40010
 If everything works - 
 
 Click on the hcalSupervisor -> control panel -> setup -> start 
+<hr>
+**Instructions for using RCMS at 904**
+Checking that these changes have taken effect in the RCMS gui.  To open the RCMS gui, one should first tunnel into the cms904 network:
+<pre>ssh -Y whitbeck@cms904usr -D 2013</pre>
 
+One should then point their Firefox browser to:
+
+http://cms904rc-hcal.cms904:16000/rcms/gui
+
+To enable this there are some settings that one might have to change.  Go to settings - preferences - advanced - network - settings…  Switch to manual proxy  configuration set the SOCKS Host to localHost and the port you chose when you set up the tunnel (in this case 2013).  Select 'SOCKS v5' and 'remote DNS’, and click okay.  The RCMS gui will prompt you for a username and password, this will be hcalpro for both.  
+
+One can now browse the available configuration from the ‘Configuration Chooser’ page.  
+First check that there are no current configurations being used by going to the 'Running Configurations’ page.  If nothing is attached you can then choose a configuration from the ‘Configuration Chooser’ page.  Once chosen, click ‘create’.  Click initialize.  If you got an error, log can be check by doing: 
+<pre>ssh cms904rc-hcal
+Handsaw.pl /var/log/rcms/hcalpro/Logs_hcalpro.xml|less -R</pre>
+Then you can click start!
+<hr>
 
 notes from other trials...
 -- For some reason this didn't work the although it has in the past.  I am not sure why though. Probably something in my proxy settings -- Indeed when I set the proxy port to 2013 and logged into cms904usr with -D 2013, everything worked -- Now the usual hyperdaq links are not there ... 
 
 I am not sure why this is, but I was also have trouble connecting to the server.  It took a while for the peer-to-peer thing to initialize.  I am wondering if it just takes a while for everything to connect... indeed it took like 10 minutes for everything to start behaving. 
 
-<a name="DissectingJetsMET">
-## *Dissecting jets+MET* 
+I was successfully able to setup and start a run using the run configuration that I created last week ( /hcalpro/904Int/VME_uTCA30_QIE10_CI) *and* start and stop a run with the standalone xdaq tools.  The run was successful and I was able to get an output file.  However, now I need to get help from Jay on how to analyze this data! I have copied the file to:
+<pre>lxplus.cern.ch:workPublic/HTB_000101.root</pre>
 
-To do list :
+<hr>
 
-1. Finish writing up a section in the paper on the variables and their distributions
+**ngRBXmanager Setup**
 
-2. Make 2D plots 
+do not source the hcal_teststand_scripts!!  
+
+<pre>/nfshome0/whitbeck/hcalngRBX/test</pre>
+* start a xdaq application to run the ngRBXmanager:
+<pre>bash run-test.sh</pre>
+* Go to this webpage (either with a tunnel or directly from cms904usr):
+http://hcal904daq01.cms904:40010/
+* Go to HCal Supervisor and initialize
+* Go to ngRBXmanager hyperdaq page
+
+-- to check that the configuration
+
+working with Seth today, we found that there were two main problems:
+
+* there were two supervisors being configured 
+* there were two applications that had the same ID
+
+Now everthying works!  I was successfully able to take a run in the usual way.  
 
 > Written with [StackEdit](https://stackedit.io/).
