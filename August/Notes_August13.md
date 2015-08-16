@@ -13,7 +13,7 @@ Working on 2 main project today:
 
 1. Remake Zinv plots for the DPS
 	+ make sure to add the jetID and filters!!!
-	+ implement the photon classification branches into tree maker
+	+ ~~implement the photon classification branches into tree maker~~
 	+ try to get the QCD contamination added to the photon plots 
 	
 2. Collect plots from others and upload them to SVN
