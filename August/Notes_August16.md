@@ -9,13 +9,15 @@ Working on 1 main project today:
 <a name="RA2b">
 ## *RA2/b*
 
-1. Remake Zinv plots for the DPS
+0. Collect plots from others and upload them to SVN
+0. Remake Zinv plots for the DPS [notes](#remakingZinvPlots)
 	+ make sure to add the jetID and filters!!!
-	+ implement the photon classification branches into tree maker
+	+ implement n-vertex reweighting
+	+ submit jobs for histograms - include separate histograms for prompt and non-prompt photons	
 	+ try to get the QCD contamination added to the photon plots 
-	
-2. Collect plots from others and upload them to SVN
+	+ update style to match pub-comm conventions
 
-
-
+### Notes:
+<a name="remakingZinvPlots">
+#### Remaking Zinv plots for DPS
 > Written with [StackEdit](https://stackedit.io/).
