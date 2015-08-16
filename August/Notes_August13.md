@@ -42,6 +42,23 @@ To do list:
 	+ get a simple dump to work
 	+ get an analyzer that makes useful plots
 
+I got Jay's main analyzer to do something:
+<pre>/afs/cern.ch/user/w/whitbeck/workPublic/HFreco/CMSSW_7_5_0/src/UserCode/H2TestBeamAnalyzer</pre>
+It worked!!! 
+
+Most of the data looks like its junk though.  I trying to grab the newer data file that I took today, maybe that is better... but it didn't.  
+
+I am not sure if I am doing something wrong or if this if just bad data.  Its hard to say because I wasn't really careful about checking the links when I took the runs.  
+
+Using Ted Laird's script, which is here:
+<pre>/afs/cern.ch/user/w/whitbeck/workPublic/hcalraw</pre>
+checked out from here:
+https://github.com/elaird/hcalraw
+
+Its quite easy to get dumps by doing:
+<pre>export FEDID=999
+./oneRun.py --file1=HTB_000102.root --feds1=${FEDID} --dump 8</pre>
+
 <a name="DissectingJetsMET">
 ## *Dissecting jets+MET* 
 
