@@ -20,14 +20,14 @@ There seems to be code in both the src and plugins directories:
 
 src:
 
-| file name  | description   | dependecies   |
+| File Name  | Description   | Dependecies   |
 | ---------- | ------------- | ------------- |
-| AMC13Header.cc          | | | 
-| HcalDataFrameFilter.cc  | | | 
-| HcalPacker.cc           | | | 
-| HcalUnpacker.cc| | | 
-| HcalDCCHeader.cc   | | |      
-| HcalFEDList.cc         | | |  
+| AMC13Header.cc          | gets pointer to current AMC13 header??? | interface/AMC13Header.h | 
+| HcalDataFrameFilter.cc  | implements a class which seems to simply check if data in digi collections are 'good' | interface/HcalDataFrameFilter.h | 
+| HcalPacker.cc           | creates raw data from digi collections | interface/HcalPacker.h, interface/HcalHTRData.h, interface/HcalDCCHeader.h, interface/HcalGenericDetId.h, interface/MessageLogger.h, interface/FEDTrailer.h, interface/CRC16.h| 
+| HcalUnpacker.cc| creates digi collections from raw data | interface/HcalUnpacker.h, interface/HcalDCCHeader.h, interface/HcalDTCHeader.h, interface/AMC13Header.h, interface/HcalHTRData.h, interface/HcalUHTRData.h, DataFormats/HcalDetId/interface/HcalOtherDetId.h, DataFormats/HcalDigi/interface/HcalQIESample.h, FWCore/MessageLogger/interface/MessageLogger.h, interface/HcalTTPUnpacker.h| 
+| HcalDCCHeader.cc   |  | |      
+| HcalFEDList.cc         | seems to just define a scheme for a range of FEDs based on calibration modules??? | DataFormats/FEDRawData/interface/FEDNumbering.h, EventFilter/HcalRawToDigi/interface/HcalDCCHeader.h, EventFilter/HcalRawToDigi/interface/HcalFEDList.h |  
 | HcalTTPUnpacker.cc| | | 
 | HcalDTCHeader.cc      | | |   
 | HcalHTRData.cc          | | | 
@@ -35,7 +35,7 @@ src:
 
 plugins:
 
-| file name  | description   | dependecies   |
+| File Name  | Description   | Dependecies   |
 | ---------- | ------------- | ------------- |
 | HcalHistogramRawToDigi.cc |||         
 | HcalLaserHBHEHFFilter2012.cc|||
