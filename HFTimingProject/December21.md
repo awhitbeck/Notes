@@ -19,38 +19,38 @@ For the packer/unpacker, I think all of the code is in EventFilter/HcalRawToDigi
 There seems to be code in both the src and plugins directories:
 
 src:
-|file name | description | dependecies |
-|----------|-------------|-------------|
-|AMC13Header.cc          ||| 
-|HcalDataFrameFilter.cc  ||| 
-|HcalPacker.cc           ||| 
-|HcalUnpacker.cc||| 
-|HcalDCCHeader.cc   |||      
-|HcalFEDList.cc         |||  
-|HcalTTPUnpacker.cc||| 
-|HcalDTCHeader.cc      |||   
-|HcalHTRData.cc          ||| 
-|HcalUHTRData.cc||| 
+| file name  | description   | dependecies   |
+| ---------- | ------------- | ------------- |
+| AMC13Header.cc          ||| 
+| HcalDataFrameFilter.cc  ||| 
+| HcalPacker.cc           ||| 
+| HcalUnpacker.cc||| 
+| HcalDCCHeader.cc   |||      
+| HcalFEDList.cc         |||  
+| HcalTTPUnpacker.cc||| 
+| HcalDTCHeader.cc      |||   
+| HcalHTRData.cc          ||| 
+| HcalUHTRData.cc||| 
 
 plugins:
-|file name | description | dependecies |
-|----------|-------------|-------------|
-|HcalHistogramRawToDigi.cc |||         
-|HcalLaserHBHEHFFilter2012.cc|||
-|HcalCalibFEDSelector.cc        |||    
-|HcalHistogramRawToDigi.h          ||| 
-|HcalLaserHFFilter2012.cc|||
-|HcalCalibTypeFilter.cc     |||        
-|HcalLaserEventFiltProducer2012.cc  |||
-|HcalRawToDigi.cc|||
-|HcalDigiToRaw.cc   |||                
-|HcalLaserEventFiltProducer2012.h   |||
-|HcalRawToDigi.h|||
-|HcalDigiToRaw.h   |||                 
-|HcalLaserEventFilter2012.cc        |||
-|modules.cc|||
-|HcalEmptyEventFilter.cc            |||
-|HcalLaserHBHEFilter2012.cc|||
+| file name  | description   | dependecies   |
+| ---------- | ------------- | ------------- |
+| HcalHistogramRawToDigi.cc |||         
+| HcalLaserHBHEHFFilter2012.cc|||
+| HcalCalibFEDSelector.cc        |||    
+| HcalHistogramRawToDigi.h          ||| 
+| HcalLaserHFFilter2012.cc|||
+| HcalCalibTypeFilter.cc     |||        
+| HcalLaserEventFiltProducer2012.cc  |||
+| HcalRawToDigi.cc|||
+| HcalDigiToRaw.cc   |||                
+| HcalLaserEventFiltProducer2012.h   |||
+| HcalRawToDigi.h|||
+| HcalDigiToRaw.h   |||                 
+| HcalLaserEventFilter2012.cc        |||
+| modules.cc|||
+| HcalEmptyEventFilter.cc            |||
+| HcalLaserHBHEFilter2012.cc||| 
 
 
 #### Side note ####
